@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JetFlix</title>
+    <link rel="stylesheet" href="register-page-styling.css">
+    <script src="https://kit.fontawesome.com/a1d5c3d0f2.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="banner">
+        <div class="logos">
+          <i class="icon-play-circle fa-regular fa-circle-play"></i>
+          <div class="jet-flix">JetFlix</div>
+        </div>
+        <div class="gradient"></div>
+        <video class="video-banner" src="Assest/register-page-bg.mp4" muted autoplay loop></video>
+        <div class="rectangle">
+          <div class="register">
+            <div class="register-title">Register</div>
+            <form class="register-form" onsubmit="return validateForm(event)">
+              <div class="inputod">
+                <input type="text" id="name-input" placeholder="Name">
+                <input type="password" id="password-input" placeholder="Password">
+                <input type="password" id="confirm-password-input" placeholder="Confirm Password">
+                <input type="date" id="date-input" placeholder="Date Of Birth">
+                <select name="gender" id="gender-select">
+                  <option value="gender" hidden>Gender</option>
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
+                </select>
+              </div>
+              <label for="agree-checkbox">
+                <input type="checkbox" id="agree-checkbox" class="checkbox-input" />
+                <span class="checkbox-text">I have read and agree to the Terms of Service & Privacy Policy</span>
+              </label>
+              <button type="submit">Register</button>
+            </form>
+          </div>
+          <div class="msg" id="alert-message"></div>
+        </div>
+      </div>
+      
+      
+
+    <div class="footer">
+        <div class="footer-content">
+            <div class="icon-footer">
+                <i class="icon-play-circle fa-regular fa-circle-play"></i>
+                <div class=jet-flix>JetFlix</div>
+            </div>
+            <div class="corp">©️ 2023 JetFlix, Inc.</div>
+            <div class="name">Made by Leo</div>
+        </div>
+    </div>
+    
+    <script src="register-checker.js"></script>
+</body>
+</html>

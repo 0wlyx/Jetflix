@@ -1,0 +1,639 @@
+@import url("https://fonts.googleapis.com/css?family=Reem+Kufi+Ink:700,400|Tinos:400|Tenor+Sans:400");
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    max-width: 100vw;
+    max-height: 100vw;
+    overflow-x: hidden;
+    word-spacing: 3px;
+    font-family: "Reem Kufi Ink";
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    opacity: 0.3;
+    position: absolute;
+    top: 0;
+}
+
+.video-ctr {
+    width: 100vw;
+    height: 100vh;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: white;
+}
+
+::-webkit-scrollbar {
+    width: 2px;
+    height: 0px;
+}
+
+.nav-item {
+    text-decoration: none;
+    transition: 0.6s;
+}
+
+.nav-item:hover {
+    color: red;
+    transition: 0.6s;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 7vh;
+    width: 100vw;
+    position: fixed;
+    z-index: 999;
+    color: white;
+    font-size: 20px;
+    padding: 0 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    width: 60vw;
+    justify-content: flex-start;
+}
+
+.text {
+    display: flex;
+    gap: 20px;
+    font-size: 18px;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    margin-right: 3vw;
+}
+
+.search {
+    display: flex;
+    width: 250px;
+    height: 30px;
+    color: white;
+    border-radius: 10px;
+    justify-content: flex-end;
+    align-items: flex-start;
+    align-items: center;
+    background-color: rgb(154, 152, 152);
+    padding: 0px 10px;
+}
+
+.logos {
+    display: flex;
+    font-size: 25px;
+    gap: 8px;
+    color: red;
+    font-style: bold;
+}
+
+.title-banner {
+    position: absolute;
+    top: 32%;
+    left: 4vw;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 100%;
+    z-index: 20;
+}
+
+.sign-up {
+    display: flex;
+    font-family: "Reem Kufi Ink";
+    width: 73px;
+    height: 30px;
+    color: black;
+    border-radius: 10px;
+    justify-content: flex-end;
+    align-items: flex-start;
+    align-items: center;
+    background-color: white;
+    padding: 0px 10px;
+}
+
+h1 {
+    margin: 0px;
+}
+
+.title {
+    font-family: "Reem Kufi Ink";
+    font-size: 90px;
+}
+
+.title-and-desc {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.desc {
+    width: 70vw;
+    font-family: "Reem Kufi Ink";
+    font-size: 31px;
+}
+
+.button {
+    display: flex;
+    gap: 30px;
+}
+
+.watch-now-button {
+    cursor: pointer;
+    display: flex;
+    font-family: "Reem Kufi Ink";
+    font-size: 28px;
+    gap: 8px;
+    color: white;
+    border-radius: 20px;
+    align-items: center;
+    padding: 7px 32px;
+    background-color: rgb(184, 5, 5);
+}
+
+.jet-flix {
+    font-family: "Reem Kufi Ink";
+    font-size: 16px;
+    font-style: bold;
+}
+
+.movies-item {
+    height: 300px;
+    border-radius: 10px;
+    border-color: grey;
+    border-style: solid;
+    width: 217px;
+    transition: 0.6s;
+}
+
+.movies {
+    display: flex;
+    gap: 70px;
+}
+
+.movie-class-text {
+    font-family: "Reem Kufi Ink";
+    font-size: 50px;
+    color: white;
+}
+
+.movie-class {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    min-height: 507px;
+    position: absolute;
+    left: 68px;
+    top: 770px;
+    width: 1686px;
+}
+
+.series-item {
+    height: 300px;
+    border-radius: 10px;
+    border-color: grey;
+    border-style: solid;
+    width: 217px;
+    transition: 0.6s;
+}
+
+.series {
+    display: flex;
+    gap: 70px;
+}
+
+.series-class-text {
+    font-family: "Reem Kufi Ink";
+    font-size: 50px;
+    color: white;
+}
+
+.series-class {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    min-height: 507px;
+    position: absolute;
+    left: 68px;
+    top: 1200px;
+    width: 1686px;
+}
+
+.anime-item {
+    height: 300px;
+    border-radius: 10px;
+    border-color: grey;
+    border-style: solid;
+    width: 217px;
+    transition: 0.6s;
+}
+
+.anime {
+    display: flex;
+    gap: 70px;
+}
+
+.anime-class-text {
+    font-family: "Reem Kufi Ink";
+    font-size: 50px;
+    color: white;
+}
+
+.anime-class {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    min-height: 507px;
+    position: absolute;
+    left: 68px;
+    top: 1630px;
+    width: 1686px;
+}
+
+.drakor-item {
+    height: 300px;
+    border-radius: 10px;
+    border-color: grey;
+    border-style: solid;
+    width: 217px;
+    transition: 0.6s;
+}
+
+.drakor {
+    display: flex;
+    gap: 70px;
+}
+
+.drakor-class-text {
+    font-family: "Reem Kufi Ink";
+    font-size: 50px;
+    color: white;
+}
+
+.drakor-class {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    min-height: 507px;
+    position: absolute;
+    left: 68px;
+    top: 2060px;
+    width: 1686px;
+}
+
+.icon-footer {
+    display: flex;
+    gap: 8px;
+    font-size: 20px;
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    width: 100vw;
+    height: 100px;
+    justify-content: space-evenly;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    top: 180vw;
+    position: absolute;
+    bottom: 0;
+}
+
+.corp {
+    font-size: 16px;
+    color: red;
+}
+
+.name {
+    font-size: 16px;
+    color: red;
+}
+
+.movies-item:hover {
+    transition: 0.6s;
+    transform: scale(1.1);
+    opacity: 100%;
+}
+
+.series-item:hover {
+    transition: 0.6s;
+    transform: scale(1.1);
+    opacity: 100%;
+}
+
+.anime-item:hover {
+    transition: 0.6s;
+    transform: scale(1.1);
+    opacity: 100%;
+}
+
+.drakor-item:hover {
+    transition: 0.6s;
+    transform: scale(1.1);
+    opacity: 100%;
+}
+
+.gradient {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(180deg, rgba(2, 0, 36, 0) 0%, rgba(0, 0, 0, 1) 100%);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 10;
+}
+
+.menu-toggle{
+    display: none;
+}
+
+@media (max-width: 768px) {
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: black;
+        max-width: 100vw;
+        max-height: 100vh; 
+        overflow-x: hidden;
+        word-spacing: 3px;
+        font-family: "Reem Kufi Ink";
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 7vh;
+        width: 100vw; 
+        position: fixed;
+        z-index: 999;
+        margin-left: -1.5vh;
+        color: white;
+        font-size: 20px;
+        padding: 0 20px;
+    }
+
+    .text {
+        display: flex;
+        gap: 20px;
+        font-size: 14px;
+    }
+
+    .logo {
+        margin-left: 0.4vw;
+        display: flex;
+        position: relative;
+        gap: 20px;
+        width: 100%; 
+        justify-content: start;
+    }
+
+
+    .right {
+        position: relative;
+        display: flex;
+        width: 20vw;
+        justify-content: flex-end; 
+        gap: 30px;
+    }
+
+    .title-banner {
+        top: 15%;
+        left: 2vw;
+        width: 96%; 
+    }
+
+    .desc {
+        width: 75%; 
+        font-size: 16px;
+    }
+
+    .button {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .watch-now-button {
+        font-size: 15px;
+        width: 15%; 
+    }
+
+    .watch-now {
+        margin-left: 2vw;
+    }
+
+    .movie-class-text,
+    .series-class-text,
+    .anime-class-text,
+    .drakor-class-text {
+        margin-left: 2.2vw;
+    }
+
+    .movie-class,
+    .series-class,
+    .anime-class,
+    .drakor-class {
+        margin-left: -9vw;
+        gap: 10px;
+        margin-top: -41vw;
+        width: 96%;
+    }
+
+    .movies-item,
+    .series-item,
+    .anime-item,
+    .drakor-item {
+        height: auto; 
+        border-radius: 10px;
+        border-color: grey;
+        border-style: solid;
+        display: flex;
+        width: 30%; 
+        transition: 0.6s;
+    }
+
+
+    .movies{
+        display: flex;
+        margin-left: 2vw;
+        gap: 2vw;
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
+
+    .series{
+        display: flex;
+        margin-left: 2vw;
+        gap: 2vw;
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
+
+    .anime{
+        display: flex;
+        margin-left: 2vw;
+        gap: 2vw;
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
+
+    .drakor{
+        display: flex;
+        margin-left: 2vw;
+        gap: 2vw;
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
+
+    .search {
+        background-color: transparent;
+    }
+
+    .footer {
+        top: 300vw; 
+        bottom: 0; 
+    }
+    
+    .gradient {
+        width: 100vw;
+        height: 60vw;
+    }
+
+    .video {
+        width: 100vw;
+        height: 60vw;
+    }
+
+    .menu-toggle{
+        display: none;
+    }
+
+    .video-ctr {
+        width: 100%;
+        height: auto; 
+    }
+}
+
+@media (max-width: 420px) {
+    .menu-toggle {
+        display: flex;
+        z-index: 99;
+        position: relative;
+        flex-direction: column;
+    }
+
+    .title {
+        font-size: 16vw;
+    }
+
+    .watch-now-button {
+        width: 24vw;
+        align-items: center;
+    }
+
+    .movie-class {
+        margin-top: -80vw;
+        margin-left: -16vw;
+        height: 20vw;
+    }
+
+    .series-class {
+        margin-top: -110vw;
+        margin-left: -16vw;
+        height: 20vw;
+    }
+
+    .anime-class {
+        margin-top: -140vw;
+        margin-left: -16vw;
+        height: 20vw;
+    }
+
+    .drakor-class {
+        margin-top: -170vw;
+        margin-left: -16vw;
+        height: 20vw;
+    }
+
+    .footer {
+        position: absolute;
+        margin-top: 120vw;
+    }
+
+    .desc {
+        text-align: justify;
+        width: 90%;
+        margin-left: 2vw;
+    }
+
+    .menu-items.active {
+        padding-top: 16vw;
+        width: 40vw;
+        height: 100%;
+        margin-top: 34vw;
+        position: relative;
+        margin-left: -37vw;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav-item {
+        margin-left: 3vw;
+    }
+
+    .right {
+        margin-right: 5vw;
+    }
+
+    .menu-items {
+        display: none;
+    }
+
+    .logos {
+        margin-left: 5vw;
+    }
+}
+
+@media (max-width: 375px) {
+    body {
+        position: relative;
+        padding-bottom: 4rem; 
+    }
+
+    .footer {
+        position: absolute;
+        margin-top: 210vw;
+        width: 100%;
+    }
+}
+
+
